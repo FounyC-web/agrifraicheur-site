@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriFraîcheur CI — Fruits, Légumes & Produits Agricoles Transformés à Abidjan</title>
+  <meta name="description" content="AgriFraîcheur CI, entreprise agricole ivoirienne basée à Treichville Arras 3, Abidjan. Vente de fruits, légumes frais et produits transformés : banane plantain, manioc, attiéké, jus naturels." />
+  <!--
+  Site adapté pour AgriFraîcheur CI
+  Base technique : template "Clearwave" (TemplateMo 622) — structure HTML/CSS/JS conservée à l'identique
+  Contenu, textes et images de contexte adaptés à l'activité agroalimentaire
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="#screens">Nos produits</a>
+    <a href="#features">Nos services</a>
+    <a href="#pricing">Tarifs</a>
+    <a href="#testimonials">Avis clients</a>
+    <a href="#order-form">Commander</a>
+    <a href="#integrations">Paiement & Livraison</a>
+    <a href="#faq">FAQ</a>
+    <a href="tel:+2250704856375" class="mobile-cta btn-primary">Commander maintenant</a>
+  </div>
+
+  <!-- ── 1. NAV ── -->
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Agri<span>Fraîcheur</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="#screens">Nos produits</a></li>
+        <li><a href="#features">Nos services</a></li>
+        <li><a href="#pricing">Tarifs</a></li>
+        <li><a href="#testimonials">Avis clients</a></li>
+        <li><a href="#order-form">Commander</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="tel:+2250704856375" class="btn-ghost">07 04 85 63 75</a>
+        <a href="#pricing" class="btn-primary">Commander maintenant</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── 2. HERO ── -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <div class="hero-badge-dot">✦</div>
+            <span>Producteur <strong>N°1 de fraîcheur</strong> à Abidjan</span>
+          </div>
+          <h1 class="hero-title reveal reveal-delay-1">
+            Du champ à votre table,<br><em>toujours frais.</em>
+          </h1>
+          <p class="hero-sub reveal reveal-delay-2">
+            AgriFraîcheur CI livre à Abidjan des fruits, légumes et produits agricoles transformés — banane plantain, manioc, attiéké et jus naturels — récoltés et préparés avec soin, chaque jour.
+          </p>
+          <div class="hero-actions reveal reveal-delay-3">
+            <a href="tel:+2250704856375" class="btn-primary-lg">
+              Commander maintenant
+              <span class="btn-arrow">→</span>
+            </a>
+            <a href="#screens" class="btn-outline-lg">
+              <span>▶</span> Découvrir nos produits
+            </a>
+          </div>
+          <div class="hero-trust reveal reveal-delay-4">
+            <div class="trust-item">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              Fraîcheur garantie
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              Livraison rapide à Abidjan
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              500+ familles servies
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay-2">
+          <div class="hero-dashboard">
+            <div class="dashboard-bar">
+              <div class="db-dot"></div><div class="db-dot"></div><div class="db-dot"></div>
+            </div>
+            <div class="dashboard-body">
+              <div class="db-header">
+                <div class="db-title">Ventes de la semaine</div>
+                <div class="db-tag">En direct</div>
+              </div>
+              <div class="db-chart">
+                <div class="db-bar" style="height:35%"></div>
+                <div class="db-bar" style="height:55%"></div>
+                <div class="db-bar" style="height:42%"></div>
+                <div class="db-bar active" style="height:75%"></div>
+                <div class="db-bar" style="height:60%"></div>
+                <div class="db-bar active" style="height:88%"></div>
+                <div class="db-bar" style="height:70%"></div>
+                <div class="db-bar active" style="height:92%"></div>
+              </div>
+              <div class="db-stats">
+                <div class="db-stat">
+                  <div class="db-stat-val">98<span style="font-size:.9rem;color:var(--accent)">%</span></div>
+                  <div class="db-stat-label">Fraîcheur produit</div>
+                  <div class="db-stat-change">+12%</div>
+                </div>
+                <div class="db-stat">
+                  <div class="db-stat-val">3.2<span style="font-size:.9rem;color:var(--accent)">k</span></div>
+                  <div class="db-stat-label">Commandes livrées</div>
+                  <div class="db-stat-change">+8%</div>
+                </div>
+                <div class="db-stat">
+                  <div class="db-stat-val">45<span style="font-size:.9rem;color:var(--accent)">mn</span></div>
+                  <div class="db-stat-label">Délai moyen livraison</div>
+                  <div class="db-stat-change">+24%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-float-badge">
+            <div class="float-badge-icon">✦</div>
+            <div class="float-badge-text">
+              <strong>Nouvelle récolte</strong>
+              <span>Attiéké frais · aujourd'hui</span>
+            </div>
+          </div>
+          <div class="hero-float-badge-2">
+            <div class="float-badge-2-val">↑ 34%</div>
+            <div class="float-badge-2-label">Commandes ce mois</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 3. LOGO TICKER ── -->
+  <div class="ticker-section">
+    <div class="ticker-label">Ils nous font confiance à Abidjan</div>
+    <div class="ticker-track-wrap">
+      <div class="ticker-track">
+        <!-- Set 1 -->
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>Marché de Treichville</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>Restaurant Baoulé d'Or</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12,2 22,20 2,20"/></svg></div>Maquis Chez Tantie</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><path d="M4 4h16v12H4z M8 20h8"/></svg></div>Supérette Riviera</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>Cantine Cocody</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>Épicerie Marcory</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>Hôtel du Plateau</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>Traiteur Yamoussoukro</div>
+        <div class="ticker-dot"></div>
+        <!-- Set 2 (duplicate for seamless loop) -->
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>Marché de Treichville</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>Restaurant Baoulé d'Or</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12,2 22,20 2,20"/></svg></div>Maquis Chez Tantie</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><path d="M4 4h16v12H4z M8 20h8"/></svg></div>Supérette Riviera</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>Cantine Cocody</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>Épicerie Marcory</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>Hôtel du Plateau</div>
+        <div class="ticker-dot"></div>
+        <div class="ticker-item"><div class="ticker-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>Traiteur Yamoussoukro</div>
+        <div class="ticker-dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 5. 3D PHONE CAROUSEL ── -->
+  <section class="carousel-section" id="screens">
+    <div class="container">
+      <div class="carousel-header">
+        <div class="section-label reveal">Nos produits</div>
+        <h2 class="section-title reveal reveal-delay-1">Suivez vos commandes,<br><em>où que vous soyez</em></h2>
+        <p class="section-sub reveal reveal-delay-2">Découvrez nos gammes de fruits, légumes et produits transformés, et suivez vos commandes et livraisons directement depuis votre téléphone.</p>
+      </div>
+    </div>
+    <div class="carousel-zoom">
+      <button class="zoom-btn" id="zoomOut" aria-label="Réduire">−</button>
+      <div class="zoom-pips" id="zoomPips"></div>
+      <button class="zoom-btn" id="zoomIn" aria-label="Agrandir">+</button>
+    </div>
+
+    <div class="carousel-stage" id="carouselStage">
+      <div class="carousel-track" id="carouselTrack">
+
+        <!-- Phone screens: 5 different screen designs + extras for looping -->
+        <!-- We will render 7 cards and cycle positions -->
+
+        <div class="phone-card" data-pos="left2" data-index="0">
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <img src="images/tm-622-screen-01.jpg" alt="Aperçu de l'espace client AgriFraîcheur CI 1" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="phone-card" data-pos="left1" data-index="1">
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <img src="images/tm-622-screen-02.jpg" alt="Aperçu de l'espace client AgriFraîcheur CI 2" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="phone-card" data-pos="center" data-index="2">
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <img src="images/tm-622-screen-03.jpg" alt="Aperçu de l'espace client AgriFraîcheur CI 3" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="phone-card" data-pos="right1" data-index="3">
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <img src="images/tm-622-screen-04.jpg" alt="Aperçu de l'espace client AgriFraîcheur CI 4" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="phone-card" data-pos="right2" data-index="4">
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <img src="images/tm-622-screen-05.jpg" alt="Aperçu de l'espace client AgriFraîcheur CI 5" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;justify-content:center;gap:24px;width:100%;margin-top:48px;">
+      <button class="carousel-btn" id="carouselPrev" aria-label="Écran précédent">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <div class="carousel-dots" id="carouselDots"></div>
+      <button class="carousel-btn" id="carouselNext" aria-label="Écran suivant">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ── 4. FEATURES ── -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="features-header">
+        <div class="section-label reveal">Nos services</div>
+        <h2 class="section-title reveal reveal-delay-1">Pensé pour la <em>fraîcheur</em><br>à chaque étape</h2>
+        <p class="section-sub reveal reveal-delay-2">Du champ à la livraison, chaque étape est pensée pour garantir des produits frais et un service simple. Pas de complications, juste du bon.</p>
+      </div>
+
+      <!-- Feature 1 -->
+      <div class="feature-row">
+        <div class="feature-content reveal">
+          <div class="feature-number">01 — Catalogue Unifié</div>
+          <h3 class="feature-title">Tous nos produits, en un coup d'œil</h3>
+          <p class="feature-desc">Fruits, légumes et produits transformés réunis dans un catalogue simple. Consultez les stocks disponibles en temps réel avant de commander.</p>
+          <div class="feature-checklist">
+            <div class="feature-check"><div class="check-icon">✓</div><span>Catalogue mis à jour chaque jour</span></div>
+            <div class="feature-check"><div class="check-icon">✓</div><span>Disponibilité en temps réel selon la récolte</span></div>
+            <div class="feature-check"><div class="check-icon">✓</div><span>Tarifs adaptés particuliers, restaurateurs et grossistes</span></div>
+          </div>
+        </div>
+        <div class="feature-visual reveal reveal-delay-1">
+          <div class="feature-visual-inner">
+            <div class="fv-row">
+              <div class="fv-card">
+                <div class="fv-card-label">Ventes du mois</div>
+                <div class="fv-card-val">2,4M FCFA</div>
+                <div class="fv-card-bar"><div class="fv-card-bar-fill" style="width:72%"></div></div>
+              </div>
+              <div class="fv-card">
+                <div class="fv-card-label">Clients actifs</div>
+                <div class="fv-card-val">512</div>
+                <div class="fv-card-bar"><div class="fv-card-bar-fill" style="width:88%"></div></div>
+              </div>
+            </div>
+            <div class="fv-card">
+              <div class="fv-card-label">Activité récente</div>
+              <div class="fv-list" style="margin-top:8px">
+                <div class="fv-list-item"><span class="fv-list-name">Stock attiéké actualisé</span><span class="fv-pill green">Fait</span></div>
+                <div class="fv-list-item"><span class="fv-list-name">Commande grossiste en attente</span><span class="fv-pill blue">En cours</span></div>
+                <div class="fv-list-item"><span class="fv-list-name">Livraison Treichville</span><span class="fv-pill dim">Programmée</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-row reverse">
+        <div class="feature-content reveal">
+          <div class="feature-number">02 — Livraison Simplifiée</div>
+          <h3 class="feature-title">Vos commandes livrées<br><em>sans effort</em></h3>
+          <p class="feature-desc">Commandez par téléphone, WhatsApp ou en ligne. AgriFraîcheur CI organise la collecte, l'emballage et la livraison rapide à Abidjan et environs.</p>
+          <div class="feature-checklist">
+            <div class="feature-check"><div class="check-icon">✓</div><span>Commande simple par téléphone ou WhatsApp</span></div>
+            <div class="feature-check"><div class="check-icon">✓</div><span>Livraison à Treichville, Cocody, Marcory et environs</span></div>
+            <div class="feature-check"><div class="check-icon">✓</div><span>Suivi de chaque commande jusqu'à la livraison</span></div>
+          </div>
+        </div>
+        <div class="feature-visual reveal reveal-delay-1">
+          <div class="feature-visual-inner">
+            <div class="fv-card">
+              <div class="fv-card-label">Livraisons en cours</div>
+              <div class="fv-list" style="margin-top:8px">
+                <div class="fv-list-item"><span class="fv-list-name">Panier légumes → Cocody</span><span class="fv-pill green">En route</span></div>
+                <div class="fv-list-item"><span class="fv-list-name">Commande grossiste → Marcory</span><span class="fv-pill green">En route</span></div>
+                <div class="fv-list-item"><span class="fv-list-name">Jus naturels → Plateau</span><span class="fv-pill blue">Préparation</span></div>
+                <div class="fv-list-item"><span class="fv-list-name">Manioc & plantain → Yopougon</span><span class="fv-pill dim">Planifiée</span></div>
+              </div>
+            </div>
+            <div class="fv-row">
+              <div class="fv-card fv-wide">
+                <div class="fv-card-label">Délai moyen de livraison</div>
+                <div class="fv-card-val">45 min</div>
+                <div class="fv-card-bar"><div class="fv-card-bar-fill" style="width:91%"></div></div>
+              </div>
+              <div class="fv-card">
+                <div class="fv-card-label">Zones couvertes</div>
+                <div class="fv-card-val">12</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-row">
+        <div class="feature-content reveal">
+          <div class="feature-number">03 — Suivi Client</div>
+          <h3 class="feature-title">Un accompagnement<br>proche et <em>réactif</em></h3>
+          <p class="feature-desc">Posez vos questions, suivez vos commandes récurrentes et discutez directement avec notre équipe, sans jamais perdre le fil.</p>
+          <div class="feature-checklist">
+            <div class="feature-check"><div class="check-icon">✓</div><span>Réponse rapide sur WhatsApp et par téléphone</span></div>
+            <div class="feature-check"><div class="check-icon">✓</div><span>Commandes récurrentes pour restaurateurs et revendeurs</span></div>
+            <div class="feature-check"><div class="check-icon">✓</div><span>Équipe disponible et à l'écoute</span></div>
+          </div>
+        </div>
+        <div class="feature-visual reveal reveal-delay-1">
+          <div class="feature-visual-inner">
+            <div class="fv-row">
+              <div class="fv-card fv-wide">
+                <div class="fv-card-label">Clients en ligne</div>
+                <div style="display:flex;gap:-4px;margin-top:6px">
+                  <div style="width:28px;height:28px;border-radius:50%;background:var(--accent);border:2px solid var(--surface);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff">A</div>
+                  <div style="width:28px;height:28px;border-radius:50%;background:var(--accent-mid);border:2px solid var(--surface);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;margin-left:-6px">K</div>
+                  <div style="width:28px;height:28px;border-radius:50%;background:#5A6B66;border:2px solid var(--surface);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;margin-left:-6px">M</div>
+                  <div style="width:28px;height:28px;border-radius:50%;background:var(--bg-alt);border:2px solid var(--surface);display:flex;align-items:center;justify-content:center;font-size:9px;color:var(--text-2);margin-left:-6px">+5</div>
+                </div>
+              </div>
+              <div class="fv-card">
+                <div class="fv-card-label">Demandes ouvertes</div>
+                <div class="fv-card-val">7</div>
+              </div>
+            </div>
+            <div class="fv-card">
+              <div class="fv-card-label">Échanges récents</div>
+              <div class="fv-list" style="margin-top:8px">
+                <div class="fv-list-item"><span class="fv-list-name">Aya → Commande confirmée</span><span class="fv-pill green">Résolu</span></div>
+                <div class="fv-list-item"><span class="fv-list-name">Koffi → Question livraison</span><span class="fv-pill blue">Ouvert</span></div>
+                <div class="fv-list-item"><span class="fv-list-name">Mariam → Commande validée</span><span class="fv-pill green">Fait</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 6. STATS ── -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-rule"></div>
+          <div class="stat-value"><span class="stat-num" data-target="500">0</span><span class="stat-suffix">+</span></div>
+          <div class="stat-label">Familles & Clients servis</div>
+          <div class="stat-sublabel">À Abidjan et environs</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-rule"></div>
+          <div class="stat-value"><span class="stat-num" data-target="12">0</span><span class="stat-suffix">+</span></div>
+          <div class="stat-label">Communes livrées</div>
+          <div class="stat-sublabel">Treichville, Cocody, Marcory...</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-rule"></div>
+          <div class="stat-value"><span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span></div>
+          <div class="stat-label">Fraîcheur garantie</div>
+          <div class="stat-sublabel">Contrôlée à chaque récolte</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-3">
+          <div class="stat-rule"></div>
+          <div class="stat-value"><span class="stat-num" data-target="45">0</span><span class="stat-suffix">mn</span></div>
+          <div class="stat-label">Délai moyen de livraison</div>
+          <div class="stat-sublabel">Dans les zones couvertes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 7. PRICING ── -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="pricing-header">
+        <div class="section-label reveal">Tarifs</div>
+        <h2 class="section-title reveal reveal-delay-1">Des formules <em>simples</em> et transparentes</h2>
+        <p class="section-sub reveal reveal-delay-2">Pas de frais cachés. Pas de mauvaise surprise. Annulez à tout moment.</p>
+      </div>
+      <div class="pricing-toggle reveal">
+        <span class="toggle-label active" id="monthlyLabel">Mensuel</span>
+        <div class="toggle-switch" id="pricingToggle" role="switch" aria-checked="false" tabindex="0" aria-label="Basculer vers la facturation annuelle"></div>
+        <span class="toggle-label" id="annualLabel">Annuel</span>
+        <div class="toggle-badge">Économisez 35%</div>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Panier Particulier</div>
+          <div class="pricing-price">
+            <span class="price-amount" id="price-starter">15 000</span>
+            <span class="price-period">&nbsp;FCFA / mois</span>
+          </div>
+          <div class="price-annual-note" id="annual-note-starter">&nbsp;</div>
+          <p class="pricing-desc">Pour les familles qui veulent des fruits et légumes frais livrés chaque semaine.</p>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>1 panier hebdomadaire (5 kg)</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Fruits et légumes de saison</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Livraison gratuite à Treichville</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Produits transformés en option</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Support par téléphone & WhatsApp</span></div>
+          </div>
+          <a href="tel:+2250704856375" class="pricing-cta">Commander maintenant</a>
+        </div>
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-badge">Le plus demandé</div>
+          <div class="pricing-tier">Panier Pro</div>
+          <div class="pricing-price">
+            <span class="price-amount" id="price-pro">45 000</span>
+            <span class="price-period">&nbsp;FCFA / mois</span>
+          </div>
+          <div class="price-annual-note" id="annual-note-pro">&nbsp;</div>
+          <p class="pricing-desc">Pour restaurateurs, maquis et revendeurs qui ont besoin de volumes réguliers.</p>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Livraisons 3 fois par semaine</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Volumes personnalisés (jusqu'à 50 kg)</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Tarifs préférentiels sur l'attiéké & jus</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Facturation mensuelle simplifiée</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Ligne WhatsApp prioritaire</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Livraison gratuite à Abidjan</span></div>
+          </div>
+          <a href="tel:+2250704856375" class="pricing-cta">Commander maintenant</a>
+        </div>
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-tier">Grossiste</div>
+          <div class="pricing-price">
+            <span class="price-amount" id="price-ent">120 000</span>
+            <span class="price-period">&nbsp;FCFA / mois</span>
+          </div>
+          <div class="price-annual-note" id="annual-note-ent">&nbsp;</div>
+          <p class="pricing-desc">Pour supermarchés, hôtels et grandes structures avec des besoins sur mesure.</p>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Volumes illimités négociés</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Contrat d'approvisionnement dédié</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Planning de livraison sur mesure</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Historique de commandes illimité</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Conseiller commercial dédié</span></div>
+            <div class="pricing-feature"><div class="pricing-check">✓</div><span>Certificats de traçabilité produits</span></div>
+          </div>
+          <a href="mailto:AKD.ISSMA@gmail.com" class="pricing-cta">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 9. TESTIMONIALS ── -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header">
+        <div class="section-label reveal">Témoignages clients</div>
+        <h2 class="section-title reveal reveal-delay-1">Ils <em>adorent</em> AgriFraîcheur CI</h2>
+        <p class="section-sub reveal reveal-delay-2">Ne nous croyez pas sur parole — voici ce que disent nos clients après plusieurs mois de collaboration.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card tall reveal">
+          <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="testimonial-quote">"Depuis qu'on travaille avec AgriFraîcheur CI, on ne rate plus jamais de livraison pour notre maquis. L'attiéké arrive frais tous les matins et les plantains sont toujours de qualité. Nos clients le remarquent directement dans les plats."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AK</div>
+            <div>
+              <div class="author-name">Aya Konan</div>
+              <div class="author-role">Gérante · Maquis Chez Tantie</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="testimonial-quote">"Le suivi de commande par WhatsApp change tout. Je peux commander mon panier de légumes entre deux clients sans avoir à me déplacer."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MK</div>
+            <div>
+              <div class="author-name">Marc Koffi</div>
+              <div class="author-role">Chef cuisinier · Restaurant Baoulé d'Or</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="testimonial-quote">"Passer notre supérette en fournisseur AgriFraîcheur CI a pris une seule semaine. Simple, rapide et sans complications."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PK</div>
+            <div>
+              <div class="author-name">Prisca Kouadio</div>
+              <div class="author-role">Responsable achats · Supérette Riviera</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="testimonial-quote">"Le jus de bissap et de gingembre est excellent, et surtout constant en qualité d'une livraison à l'autre. C'est devenu un incontournable de notre carte."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">TW</div>
+            <div>
+              <div class="author-name">Tenin Waraga</div>
+              <div class="author-role">Traiteur · Cantine Cocody</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="testimonial-quote">"L'équipe répond vraiment vite à nos messages. On a eu une question sur une livraison en retard et la réponse est arrivée en moins de dix minutes."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AN</div>
+            <div>
+              <div class="author-name">Adjoua N'Guessan</div>
+              <div class="author-role">Cliente particulière · Treichville</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 9. INTEGRATIONS ── -->
+  <section class="integrations-section" id="integrations">
+    <div class="container">
+      <div class="integrations-header">
+        <div class="section-label reveal">Paiement & Livraison</div>
+        <h2 class="section-title reveal reveal-delay-1">Compatible avec vos<br><em>moyens de paiement habituels</em></h2>
+        <p class="section-sub reveal reveal-delay-2">Payez comme vous le souhaitez et recevez vos commandes rapidement, partout à Abidjan.</p>
+      </div>
+      <div class="integrations-grid">
+        <div class="integration-tile reveal"><div class="integration-name">Orange Money</div></div>
+        <div class="integration-tile reveal reveal-delay-1"><div class="integration-name">MTN Mobile Money</div></div>
+        <div class="integration-tile reveal reveal-delay-2"><div class="integration-name">Moov Money</div></div>
+        <div class="integration-tile reveal reveal-delay-3"><div class="integration-name">Wave</div></div>
+        <div class="integration-tile reveal"><div class="integration-name">Paiement à la livraison</div></div>
+        <div class="integration-tile reveal reveal-delay-1"><div class="integration-name">Virement bancaire</div></div>
+        <div class="integration-tile reveal reveal-delay-2"><div class="integration-name">WhatsApp Business</div></div>
+        <div class="integration-tile reveal reveal-delay-3"><div class="integration-name">Yango Delivery</div></div>
+        <div class="integration-tile reveal"><div class="integration-name">Glovo</div></div>
+        <div class="integration-tile reveal reveal-delay-1"><div class="integration-name">Livraison directe AgriFraîcheur</div></div>
+        <div class="integration-tile reveal reveal-delay-2"><div class="integration-name">Visa / Mastercard</div></div>
+        <div class="integration-tile reveal reveal-delay-3"><div class="integration-name">Facture entreprise</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 10. FAQ ── -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="faq-inner">
+        <div class="faq-sidebar reveal">
+          <div class="section-label">FAQ</div>
+          <h2 class="section-title">Vos questions,<br><em>nos réponses</em></h2>
+          <p class="section-sub">Vous ne trouvez pas votre réponse ? Contactez notre équipe au 07 04 85 63 75 ou par email à AKD.ISSMA@gmail.com — nous répondons sous 2 heures.</p>
+          <button class="faq-toggle-all" id="faqToggleAll">
+            <span id="faqToggleIcon">+</span> Tout développer</button>
+        </div>
+        <div class="faq-list reveal reveal-delay-1" id="faqList">
+          <div class="faq-item">
+            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+              Comment garantissez-vous la fraîcheur des produits ?
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer"><div class="faq-answer-inner">Nos fruits et légumes sont récoltés au fil de la demande et livrés le jour même ou le lendemain. Les produits transformés (attiéké, jus) sont préparés en petites quantités pour rester frais jusqu'à la livraison.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+              Quelles zones d'Abidjan livrez-vous ?
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer"><div class="faq-answer-inner">Nous livrons à Treichville, Cocody, Marcory, Plateau, Yopougon et les communes environnantes. Pour les zones plus éloignées, contactez-nous pour vérifier la disponibilité et les frais de livraison.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+              Comment passer une commande en gros pour mon restaurant ou ma boutique ?
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer"><div class="faq-answer-inner">Contactez-nous par téléphone ou WhatsApp au 07 04 85 63 75 pour discuter de vos besoins en volume. Nos formules Panier Pro et Grossiste sont pensées pour les restaurateurs, revendeurs et supermarchés.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+              Quels moyens de paiement acceptez-vous ?
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer"><div class="faq-answer-inner">Nous acceptons Orange Money, MTN Mobile Money, Moov Money, Wave, le paiement à la livraison en espèces, ainsi que le virement bancaire pour les commandes entreprises et grossistes.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+              Que se passe-t-il si un produit livré n'est pas satisfaisant ?
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer"><div class="faq-answer-inner">Signalez tout problème dans les 24 heures suivant la livraison via WhatsApp ou téléphone. Nous remplaçons le produit ou vous remboursons, selon votre préférence, sans complication.</div></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+              Puis-je annuler ou modifier mon abonnement panier ?
+              <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer"><div class="faq-answer-inner">Oui, sans engagement. Vous pouvez suspendre, modifier ou annuler votre panier hebdomadaire ou mensuel à tout moment en nous contactant directement.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 11. ORDER FORM ── -->
+  <section class="order-form-section" id="order-form">
+    <div class="container">
+      <!-- En-tête de la section avec titre et description -->
+      <div class="order-form-header">
+        <div class="section-label reveal">Commande</div>
+        <h2 class="section-title reveal reveal-delay-1">Passez votre <em>commande</em><br>en quelques clics</h2>
+        <p class="section-sub reveal reveal-delay-2">Remplissez le formulaire ci-dessous pour commander vos produits frais. Notre équipe vous contactera pour confirmer la commande et organiser la livraison.</p>
+      </div>
+
+      <!-- Conteneur principal du formulaire -->
+      <div class="order-form-container reveal reveal-delay-2">
+        <form class="order-form" id="orderForm" action="#" method="POST">
+          
+          <!-- Division du formulaire en deux colonnes : informations personnelles et détails de commande -->
+          <div class="order-form-grid">
+            
+            <!-- Colonne de gauche : Informations personnelles -->
+            <div class="order-form-column">
+              <h3 class="order-form-column-title">Informations personnelles</h3>
+              
+              <!-- Champ : Nom complet (obligatoire) -->
+              <div class="form-group">
+                <label for="fullName" class="form-label">Nom complet <span class="required">*</span></label>
+                <input 
+                  type="text" 
+                  id="fullName" 
+                  name="fullName" 
+                  class="form-input" 
+                  placeholder="Entrez votre nom complet" 
+                  required 
+                  aria-required="true"
+                />
+                <span class="form-error" id="fullNameError"></span>
+              </div>
+
+              <!-- Champ : Numéro de téléphone (obligatoire) -->
+              <div class="form-group">
+                <label for="phone" class="form-label">Numéro de téléphone <span class="required">*</span></label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  class="form-input" 
+                  placeholder="Ex: 07 04 85 63 75" 
+                  pattern="[0-9\s\+]{8,20}"
+                  required 
+                  aria-required="true"
+                />
+                <span class="form-hint">Format : chiffres, espaces et + autorisés</span>
+                <span class="form-error" id="phoneError"></span>
+              </div>
+
+              <!-- Champ : Adresse e-mail (optionnelle) -->
+              <div class="form-group">
+                <label for="email" class="form-label">Adresse e-mail (optionnel)</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="Ex: exemple@email.com"
+                />
+                <span class="form-error" id="emailError"></span>
+              </div>
+
+              <!-- Champ : Adresse de livraison (obligatoire) -->
+              <div class="form-group">
+                <label for="address" class="form-label">Adresse de livraison <span class="required">*</span></label>
+                <input 
+                  type="text" 
+                  id="address" 
+                  name="address" 
+                  class="form-input" 
+                  placeholder="Ex: Rue, quartier, numéro de porte" 
+                  required 
+                  aria-required="true"
+                />
+                <span class="form-error" id="addressError"></span>
+              </div>
+
+              <!-- Champ : Ville (obligatoire) -->
+              <div class="form-group">
+                <label for="city" class="form-label">Ville <span class="required">*</span></label>
+                <input 
+                  type="text" 
+                  id="city" 
+                  name="city" 
+                  class="form-input" 
+                  placeholder="Ex: Abidjan, Treichville" 
+                  required 
+                  aria-required="true"
+                />
+                <span class="form-error" id="cityError"></span>
+              </div>
+            </div>
+
+            <!-- Colonne de droite : Détails de la commande -->
+            <div class="order-form-column">
+              <h3 class="order-form-column-title">Détails de la commande</h3>
+              
+              <!-- Champ : Produit commandé (liste déroulante obligatoire) -->
+              <div class="form-group">
+                <label for="product" class="form-label">Produit commandé <span class="required">*</span></label>
+                <select 
+                  id="product" 
+                  name="product" 
+                  class="form-select" 
+                  required 
+                  aria-required="true"
+                >
+                  <option value="">-- Sélectionnez un produit --</option>
+                  <option value="panier-legumes">Panier de légumes (5 kg)</option>
+                  <option value="panier-fruits">Panier de fruits (5 kg)</option>
+                  <option value="attieke">Attiéké frais (1 kg)</option>
+                  <option value="banane-plantain">Banane plantain (1 régime)</option>
+                  <option value="manioc">Manioc (2 kg)</option>
+                  <option value="jus-bissap">Jus de bissap (1 L)</option>
+                  <option value="jus-gingembre">Jus de gingembre (1 L)</option>
+                  <option value="jus-orange">Jus d'orange naturel (1 L)</option>
+                  <option value="panier-pro">Panier Pro (restaurateur)</option>
+                  <option value="autre">Autre (précisez en commentaires)</option>
+                </select>
+                <span class="form-error" id="productError"></span>
+              </div>
+
+              <!-- Champ : Quantité (obligatoire) -->
+              <div class="form-group">
+                <label for="quantity" class="form-label">Quantité <span class="required">*</span></label>
+                <input 
+                  type="number" 
+                  id="quantity" 
+                  name="quantity" 
+                  class="form-input" 
+                  placeholder="Entrez la quantité" 
+                  min="1" 
+                  max="100" 
+                  value="1"
+                  required 
+                  aria-required="true"
+                />
+                <span class="form-hint">Minimum : 1, Maximum : 100</span>
+                <span class="form-error" id="quantityError"></span>
+              </div>
+
+              <!-- Champ : Mode de paiement (liste déroulante obligatoire) -->
+              <div class="form-group">
+                <label for="payment" class="form-label">Mode de paiement <span class="required">*</span></label>
+                <select 
+                  id="payment" 
+                  name="payment" 
+                  class="form-select" 
+                  required 
+                  aria-required="true"
+                >
+                  <option value="">-- Sélectionnez un mode de paiement --</option>
+                  <option value="orange-money">Orange Money</option>
+                  <option value="mtn-money">MTN Mobile Money</option>
+                  <option value="moov-money">Moov Money</option>
+                  <option value="wave">Wave</option>
+                  <option value="cash-livraison">Paiement à la livraison (espèces)</option>
+                  <option value="virement">Virement bancaire</option>
+                  <option value="visa-mastercard">Visa / Mastercard</option>
+                </select>
+                <span class="form-error" id="paymentError"></span>
+              </div>
+
+              <!-- Champ : Commentaires ou instructions supplémentaires (zone de texte optionnelle) -->
+              <div class="form-group">
+                <label for="comments" class="form-label">Commentaires ou instructions supplémentaires (optionnel)</label>
+                <textarea 
+                  id="comments" 
+                  name="comments" 
+                  class="form-textarea" 
+                  placeholder="Précisez vos préférences, horaires de livraison préférés, ou toute autre information utile..."
+                  rows="4"
+                ></textarea>
+                <span class="form-hint">Maximum 500 caractères</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Message de confirmation (caché par défaut, affiché après soumission réussie) -->
+          <div class="form-success-message" id="formSuccessMessage" style="display: none;">
+            <div class="success-icon">✓</div>
+            <div class="success-text">
+              <strong>Commande envoyée avec succès !</strong>
+              <p>Nous vous contacterons sous 2 heures pour confirmer votre commande et organiser la livraison.</p>
+            </div>
+          </div>
+
+          <!-- Bouton de soumission du formulaire -->
+          <div class="form-actions">
+            <button type="submit" class="btn-submit" id="submitOrderBtn">
+              Commander maintenant
+              <span class="btn-arrow">→</span>
+            </button>
+            <button type="reset" class="btn-reset">
+              Réinitialiser le formulaire
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 12. CTA BANNER ── -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="cta-content">
+          <div class="cta-label">✦ Commandez dès aujourd'hui</div>
+          <h2 class="cta-title">Prêt pour des produits<br><em>toujours frais ?</em></h2>
+          <p class="cta-sub">Rejoignez plus de 500 familles et professionnels qui font confiance à AgriFraîcheur CI. Livraison possible dès aujourd'hui.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="tel:+2250704856375" class="btn-cta-primary">
+            Commander maintenant
+            <span>→</span>
+          </a>
+          <a href="mailto:AKD.ISSMA@gmail.com" class="btn-cta-ghost">Nous contacter par email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 12. FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">Agri<span style="color:var(--accent-light)">Fraîcheur</span></a>
+          <p class="footer-brand-desc">Entreprise agricole ivoirienne basée à Treichville Arras 3, Abidjan. Fruits, légumes et produits transformés — banane plantain, manioc, attiéké, jus naturels.</p>
+          <p class="footer-brand-desc" style="margin-top:10px">
+            📍 Treichville, Arras 3, Abidjan<br>
+            📞 <a href="tel:+2250704856375" style="color:inherit">07 04 85 63 75</a><br>
+            ✉️ <a href="mailto:AKD.ISSMA@gmail.com" style="color:inherit">AKD.ISSMA@gmail.com</a>
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Twitter / X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="TikTok">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-label">Nos produits</div>
+          <div class="footer-links">
+            <a href="#features">Nos services</a>
+            <a href="#screens">Catalogue produits</a>
+            <a href="#pricing">Tarifs & abonnements</a>
+            <a href="#integrations">Paiement & livraison</a>
+            <a href="#">Nouveautés & récoltes</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-label">Entreprise</div>
+          <div class="footer-links">
+            <a href="#">À propos</a>
+            <a href="#">Notre exploitation</a>
+            <a href="#">Nos engagements qualité</a>
+            <a href="#">Devenir revendeur</a>
+            <a href="#">Actualités</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-label">Support</div>
+          <div class="footer-links">
+            <a href="#faq">Aide & FAQ</a>
+            <a href="#integrations">Zones de livraison</a>
+            <a href="#">Traçabilité produits</a>
+            <a href="mailto:AKD.ISSMA@gmail.com">Contact</a>
+            <a href="tel:+2250704856375">07 04 85 63 75</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          © 2026 AgriFraîcheur CI — Treichville Arras 3, Abidjan
+        </div>
+        <div class="footer-legal">
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Conditions générales</a>
+          <a href="#">Politique de cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
